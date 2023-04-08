@@ -14,8 +14,8 @@ FOR /F "tokens=3 delims=: " %%k in ('netsh wlan show profile name^="%profile_nam
 	SET "available=%%k"
 )	
 FOR /F "tokens=3 delims=: " %%p in ('netsh wlan show profile name^="%profile_name%" key^=clear ^| findstr "Key Content"') DO (
-		SET "wifi_pass=%%p"
-	)	
+	SET "wifi_pass=%%p"
+)	
 	
 ECHO Profile: %profile_name%
 ECHO Security Key: %available%
