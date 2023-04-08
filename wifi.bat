@@ -1,6 +1,8 @@
 @ECHO off
 SETLOCAL enabledelayedexpansion
-
+:: ---------------------------------------------------------------------------------------------:: 
+:: - Displays wlan profile name and key if security key is present.
+:: ---------------------------------------------------------------------------------------------:: 
 SET profile_name=
 SET available=
 SET wifi_pass=
